@@ -7,6 +7,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { EmployeeComponent } from './employee/employee.component';
 const myRoute : Routes =[
   {
     path:"",
@@ -15,8 +18,15 @@ const myRoute : Routes =[
   {
     path:"Contactus",
     component:ContactUsComponent
+  },
+  {
+    path:"adminpage",
+    component:AdminPageComponent
+  },
+  {
+    path:"employee",
+    component:EmployeeComponent
   }
-
 
 ]
 @NgModule({
@@ -24,12 +34,15 @@ const myRoute : Routes =[
     AppComponent,
     AboutUsComponent,
     ContactUsComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminPageComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

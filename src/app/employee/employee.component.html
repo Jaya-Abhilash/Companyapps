@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h1 style="font-size: 40px;color: rgba(87, 188, 62, 0.521);">Employee Login</h1>
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">User Name</label>
+                    <input required="" name="username" [(ngModel)]="username" type="text" class="form-control">
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">Password</label>
+                    <input required="" name="password" [(ngModel)]="password" type="password" class="form-control">
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <button (click)="login()"  class="btn btn-outline-primary"> Login </button>
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    
+                    <a routerLink="/employeeReg" role="button">Register</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
