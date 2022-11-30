@@ -10,6 +10,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { HttpClientModule } from  '@angular/common/http';
+import { AddCourseComponent } from './add-course/add-course.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 const myRoute : Routes =[
   {
     path:"",
@@ -26,8 +29,14 @@ const myRoute : Routes =[
   {
     path:"employee",
     component:EmployeeComponent
+  },
+  {path:"viewcourse",
+  component:ViewCourseComponent
+  },
+  {
+    path:"addcourse",
+    component:AddCourseComponent
   }
-
 ]
 @NgModule({
   declarations: [
@@ -36,13 +45,16 @@ const myRoute : Routes =[
     ContactUsComponent,
     NavbarComponent,
     AdminPageComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    AddCourseComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
