@@ -7,10 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./admin-page.component.css']
 })
 export class AdminPageComponent {
-username =""
-password =""
-constructor(private route:Router){}
-adminloginCheck=() =>
+  username=""
+  password=""
+
+  constructor(private route:Router){}
+
+  adminloginCheck=() =>
   {
     if(this.username=="admin" && this.password=="nestdigital")
     {
@@ -23,4 +25,5 @@ adminloginCheck=() =>
       this.password=""
     }
 
-   } }
+  }
+}
