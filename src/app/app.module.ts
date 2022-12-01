@@ -23,7 +23,7 @@ const myRoute : Routes =[
     component:ContactUsComponent
   },
   {
-    path:"adminpage",
+    path:"adminlogpage",
     component:AdminPageComponent
   },
   {
