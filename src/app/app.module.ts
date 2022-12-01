@@ -8,7 +8,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AdminPageComponent } from './admin-loginpage/admin-page.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { AddCourseComponent } from './add-course/add-course.component';
